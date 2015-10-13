@@ -77,7 +77,7 @@ public class EntityDoppleganger extends EntityCreature implements IBotaniaBossWi
 
 	public static final int SPAWN_TICKS = 100;
 	private static final float RANGE = 12F;
-	private static final float MAX_HP = 800F;
+	private static final float MAX_HP = 300F;
 
 	public static final int MOB_SPAWN_START_TICKS = 20;
 	public static final int MOB_SPAWN_END_TICKS = 80;
@@ -444,8 +444,6 @@ public class EntityDoppleganger extends EntityCreature implements IBotaniaBossWi
 						remove.add(effect);
 
 				active.removeAll(remove);
-
-				player.capabilities.isFlying = player.capabilities.isFlying && player.capabilities.isCreativeMode;
 
 				if(vazkii.botania.common.core.helper.MathHelper.pointDistanceSpace(player.posX, player.posY, player.posZ, source.posX + 0.5, source.posY + 0.5, source.posZ + 0.5) >= range) {
 					Vector3 sourceVector = new Vector3(source.posX + 0.5, source.posY + 0.5, source.posZ + 0.5);
