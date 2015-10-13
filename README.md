@@ -1,7 +1,14 @@
 ![](https://github.com/Vazkii/Botania/blob/master/web/img/logo.png)  
-Welcome to Tomewyrm's Botania repository. This is an edit based on kotasc3's [Botania - A New Dawn](https://github.com/kotasc3/A-New-Dawn-Botania/)
+
+Welcome to Tomewyrm's Botania repository.
 
 Botania is a [Minecraft](https://minecraft.net/) mod based on adding natural magic to the game.
+
+[Botania - A New Dawn](https://github.com/kotasc3/A-New-Dawn-Botania/) is a fork of Botania focused on removing Botania nerfs.
+
+This is a fork of [Botania - A New Dawn](https://github.com/kotasc3/A-New-Dawn-Botania/) built around my own preferences about changes to botania. Some things might be nerfed, some might be buffed, others might be removed, and content may be added from whole cloth.
+
+My intention is to try and keep up with Vazkii regularly, but this forked version is really only intended to be used on my personal machine and any servers which I have control over; no support will be given, any and all issues can be closed or locked without a given reason at my personal discretion.
 
 Botania by Vazkii is licensed under the [Botania License](http://botaniamod.net/license.php).
 
