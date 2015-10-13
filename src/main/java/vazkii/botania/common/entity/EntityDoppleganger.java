@@ -402,22 +402,6 @@ public class EntityDoppleganger extends EntityCreature implements IBotaniaBossWi
 		if(!worldObj.isRemote && peaceful)
 			setDead();
 
-		if(!worldObj.isRemote) {
-			int posXInt = MathHelper.floor_double(posX);
-			int posYInt = MathHelper.floor_double(posY);
-			int posZInt = MathHelper.floor_double(posZ);
-			Block block = worldObj.getBlock(posXInt, posYInt, posZInt);
-			if(block.getBlockHardness(worldObj, posXInt, posYInt, posZInt) >= 0) {
-				List<ItemStack> items = block.getDrops(worldObj, posXInt, posYInt, posZInt, 0, 0);
-				for(ItemStack stack : items) {
-					if(ConfigHandler.blockBreakParticles)
-						worldObj.playAuxSFX(2001, posXInt, posYInt, posZInt, Block.getIdFromBlock(block) + (worldObj.getBlockMetadata(posXInt, posYInt, posZInt) << 12));
-					worldObj.spawnEntityInWorld(new EntityItem(worldObj, posXInt + 0.5, posYInt + 0.5, posZInt + 0.5, stack));
-				}
-				worldObj.setBlockToAir(posXInt, posYInt, posZInt);
-			}
-		}
-
 		ChunkCoordinates source = getSource();
 		boolean hard = isHardMode();
 		
