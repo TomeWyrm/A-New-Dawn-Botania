@@ -23,7 +23,7 @@ public class CrashBotania implements ICrashCallable
     @Override
     public String call () throws Exception
     {
-        String str = "THIS INSTANCE OF MINECRAFT IS USING A FORK OF BOTANIA NOT SANCTIONED BY VAZKII, REPORT ALL CRASHES AT http://bit.ly/1KXdQeZ";
+        String str = "THIS INSTANCE OF MINECRAFT IS USING A FORK OF BOTANIA NOT SANCTIONED BY VAZKII, DO NOT REPORT CRASHES UNLESS YOU PERSONALLY KNOW TOMEWYRM.";
         return str;
     }
 
